@@ -108,16 +108,16 @@ const cards = [
 
 
 const partners = [
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
-  { src: '/image.png', alt: 'PwC' },
+  { src: '/qrn1.png', alt: 'PwC' },
+  { src: '/qrn2.png', alt: 'PwC' },
+  { src: '/qrn3.png', alt: 'PwC' },
+  { src: '/qrn4.png', alt: 'PwC' },
+  { src: '/qrn5.png', alt: 'PwC' },
+  { src: '/qrn6.png', alt: 'PwC' },
+  { src: '/qrn1.png', alt: 'PwC' },
+  { src: '/qrn2.png', alt: 'PwC' },
+  { src: '/qrn3.png', alt: 'PwC' },
+  { src: '/qrn4.png', alt: 'PwC' },
   // { src: '/partners/q-net.png',      alt: 'Q-Net'      },
   // { src: '/partners/exequantum.png', alt: 'ExeQuantum' },
   // { src: '/partners/matter-id.png',  alt: 'Matter-ID'  },
@@ -579,7 +579,7 @@ export default function HomePage() {
           {/* Illustration */}
           <div className="w-full md:w-1/2">
             <Image
-              src="/image.png"
+              src="/qrn1.png"
               alt="Uncrackable Infrastructure Illustration"
               width={800}
               height={500}
