@@ -1,9 +1,9 @@
 'use client';
 
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
-import { useState, useEffect, ReactNode, useRef, MouseEvent } from 'react';
+import { useState, useEffect, useRef, MouseEvent } from 'react';
 import { motion } from 'framer-motion';
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -344,33 +344,29 @@ function AnimatedWords({ children, delay = 100, className }: AnimatedWordsProps)
 }
 
 
-// export const metadata: Metadata = {
-//   title: "Quranium - Portfolio",
-//   description: "Developer and Computer Science Student at UMD",
-// };
 
 export default function HomePage() {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const prev = () => setIndex((i) => Math.max(i - 1, 0));
-  const next = () => setIndex((i) => Math.min(i + 1, steps.length - 1));
-  const containerRef = useRef<HTMLDivElement>(null);
+  // const prev = () => setIndex((i) => Math.max(i - 1, 0));
+  // const next = () => setIndex((i) => Math.min(i + 1, steps.length - 1));
+  // const containerRef = useRef<HTMLDivElement>(null);
 
   /** width (px) of each card + gap between them */
-  const CARD_WIDTH = 288;      // 18rem
-  const GAP = 24;              // 1.5rem
+  // const CARD_WIDTH = 288;      // 18rem
+  // const GAP = 24;              // 1.5rem
 
-  const [index1, setIndex1] = useState(0);
-  const visibleCount = 3;
-  const maxIndex = Math.max(0, cards.length - visibleCount);
+  // const [index1, setIndex1] = useState(0);
+  // const visibleCount = 3;
+  // const maxIndex = Math.max(0, cards.length - visibleCount);
 
-  const prev1 = () => setIndex((i) => Math.max(0, i - 1));
-  const next1 = () => setIndex((i) => Math.min(maxIndex, i + 1));
+  // const prev1 = () => setIndex((i) => Math.max(0, i - 1));
+  // const next1 = () => setIndex((i) => Math.min(maxIndex, i + 1));
 
-  const scrollLeft = () =>
-    containerRef.current?.scrollBy({ left: -(CARD_WIDTH + GAP), behavior: 'smooth' });
-  const scrollRight = () =>
-    containerRef.current?.scrollBy({ left: CARD_WIDTH + GAP, behavior: 'smooth' });
+  // const scrollLeft = () =>
+  //   containerRef.current?.scrollBy({ left: -(CARD_WIDTH + GAP), behavior: 'smooth' });
+  // const scrollRight = () =>
+  //   containerRef.current?.scrollBy({ left: CARD_WIDTH + GAP, behavior: 'smooth' });
 
   const carouselRef = useRef<HTMLDivElement>(null);
 
