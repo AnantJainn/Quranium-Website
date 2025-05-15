@@ -3,7 +3,7 @@
 // import { Metadata } from "next";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
-import { useState, useEffect, useRef, MouseEvent } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
