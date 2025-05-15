@@ -143,42 +143,42 @@ interface Step {
   points: string[];
 }
 
-const steps: Step[] = [
-  {
-    title: 'Global Reach',
-    date: "January '25",
-    points: [
-      'Expanding Geographically',
-      "Hosting ‘Be Uncrackable’ events at Davos during WEF ’25",
-    ],
-  },
-  {
-    title: 'Quantum Leap',
-    date: "Late January '25",
-    points: ['Quranium Mainnet Launch (Layer 1)'],
-  },
-  {
-    title: 'Ecosystem Expansion',
-    date: "February '25 Onwards",
-    points: ['Growing partnerships and DApp ecosystem'],
-  },
-  {
-    title: 'Ecosystem Expansion',
-    date: "February '25 Onwards",
-    points: ['Growing partnerships and DApp ecosystem'],
-  },
-  {
-    title: 'Ecosystem Expansion',
-    date: "February '25 Onwards",
-    points: ['Growing partnerships and DApp ecosystem'],
-  },
-  {
-    title: 'Ecosystem Expansion',
-    date: "February '25 Onwards",
-    points: ['Growing partnerships and DApp ecosystem'],
-  },
-  // …add more steps here as needed
-];
+// const steps: Step[] = [
+//   {
+//     title: 'Global Reach',
+//     date: "January '25",
+//     points: [
+//       'Expanding Geographically',
+//       "Hosting ‘Be Uncrackable’ events at Davos during WEF ’25",
+//     ],
+//   },
+//   {
+//     title: 'Quantum Leap',
+//     date: "Late January '25",
+//     points: ['Quranium Mainnet Launch (Layer 1)'],
+//   },
+//   {
+//     title: 'Ecosystem Expansion',
+//     date: "February '25 Onwards",
+//     points: ['Growing partnerships and DApp ecosystem'],
+//   },
+//   {
+//     title: 'Ecosystem Expansion',
+//     date: "February '25 Onwards",
+//     points: ['Growing partnerships and DApp ecosystem'],
+//   },
+//   {
+//     title: 'Ecosystem Expansion',
+//     date: "February '25 Onwards",
+//     points: ['Growing partnerships and DApp ecosystem'],
+//   },
+//   {
+//     title: 'Ecosystem Expansion',
+//     date: "February '25 Onwards",
+//     points: ['Growing partnerships and DApp ecosystem'],
+//   },
+//   // …add more steps here as needed
+// ];
 
 const data = [
   {
