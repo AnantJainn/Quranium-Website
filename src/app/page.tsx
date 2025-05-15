@@ -44,65 +44,65 @@ const cards = [
 ];
 
 
-export function RippleButton({ children }: { children: React.ReactNode }) {
-  const btnRef = useRef<HTMLButtonElement>(null);
+// export function RippleButton({ children }: { children: React.ReactNode }) {
+//   const btnRef = useRef<HTMLButtonElement>(null);
 
-  const createRipple = (event: MouseEvent<HTMLButtonElement>) => {
-    const btn = btnRef.current;
-    if (!btn) return;
+//   const createRipple = (event: MouseEvent<HTMLButtonElement>) => {
+//     const btn = btnRef.current;
+//     if (!btn) return;
 
-    // remove any existing ripple
-    const existing = btn.querySelector('.ripple-effect');
-    if (existing) existing.remove();
+//     // remove any existing ripple
+//     const existing = btn.querySelector('.ripple-effect');
+//     if (existing) existing.remove();
 
-    // calculate size & position
-    const rect = btn.getBoundingClientRect();
-    const diameter = Math.max(rect.width, rect.height);
-    const radius = diameter / 2;
-    const circle = document.createElement('span');
-    circle.className = 'ripple-effect';
-    circle.style.width = circle.style.height = `${diameter}px`;
-    circle.style.left = `${event.clientX - rect.left - radius}px`;
-    circle.style.top = `${event.clientY - rect.top - radius}px`;
+//     // calculate size & position
+//     const rect = btn.getBoundingClientRect();
+//     const diameter = Math.max(rect.width, rect.height);
+//     const radius = diameter / 2;
+//     const circle = document.createElement('span');
+//     circle.className = 'ripple-effect';
+//     circle.style.width = circle.style.height = `${diameter}px`;
+//     circle.style.left = `${event.clientX - rect.left - radius}px`;
+//     circle.style.top = `${event.clientY - rect.top - radius}px`;
 
-    btn.appendChild(circle);
-  };
+//     btn.appendChild(circle);
+//   };
 
-  return (
-    <>
-      <button
-        ref={btnRef}
-        onMouseDown={createRipple}
-        className={`
-          relative overflow-hidden
-          mt-4 inline-block w-auto max-w-max flex-none
-          px-6 py-3  text-red-600 border-2 border-blue-600
-          rounded-lg transition-shadow duration-300
-          hover:shadow-[0_0_8px_rgba(239,68,68,0.7)]
-        `}
-      >
-        {children}
-      </button>
+//   return (
+//     <>
+//       <button
+//         ref={btnRef}
+//         onMouseDown={createRipple}
+//         className={`
+//           relative overflow-hidden
+//           mt-4 inline-block w-auto max-w-max flex-none
+//           px-6 py-3  text-red-600 border-2 border-blue-600
+//           rounded-lg transition-shadow duration-300
+//           hover:shadow-[0_0_8px_rgba(239,68,68,0.7)]
+//         `}
+//       >
+//         {children}
+//       </button>
 
-      <style jsx>{`
-        .ripple-effect {
-          position: absolute;
-          border-radius: 50%;
-          transform: scale(0);
-          animation: ripple 600ms ease-out;
-          background-color: rgba(239, 68, 68, 0.4);
-          pointer-events: none;
-        }
-        @keyframes ripple {
-          to {
-            transform: scale(4);
-            opacity: 0;
-          }
-        }
-      `}</style>
-    </>
-  );
-}
+//       <style jsx>{`
+//         .ripple-effect {
+//           position: absolute;
+//           border-radius: 50%;
+//           transform: scale(0);
+//           animation: ripple 600ms ease-out;
+//           background-color: rgba(239, 68, 68, 0.4);
+//           pointer-events: none;
+//         }
+//         @keyframes ripple {
+//           to {
+//             transform: scale(4);
+//             opacity: 0;
+//           }
+//         }
+//       `}</style>
+//     </>
+//   );
+// }
 
 
 
