@@ -137,11 +137,11 @@ interface AnimatedWordsProps {
 
 
 
-interface Step {
-  title: string;
-  date: string;
-  points: string[];
-}
+// interface Step {
+//   title: string;
+//   date: string;
+//   points: string[];
+// }
 
 // const steps: Step[] = [
 //   {
