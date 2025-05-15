@@ -9,32 +9,32 @@ import { motion } from "motion/react";
 export function FeaturesSectionDemo() {
     const features = [
         {
-            title: "Track issues effectively",
+            title: "We are Uncrackable. Are you?",
             description:
-                "Track and manage your project issues with ease using our intuitive interface.",
+                "At Quranium, Be Uncrackable isn’t just a tag-line - it’s our DNA. Our Layer 1 technology is built using Post Quantum Cryptography; it’s engineered to withstand any threat, today and in the quantum future. But uncrackable goes beyond tech; it’s a mindset, a movement, a bond that drives everything we do. We’re here to do more than protect; we’re here to empower, innovate, and make the impossible real.",
             skeleton: <SkeletonOne />,
             className:
                 "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
         },
         {
-            title: "Capture pictures with AI",
+            title: "Some Glimpse of Podcasts",
             description:
-                "Capture stunning photos effortlessly using our advanced AI technology.",
+                "",
             skeleton: <SkeletonTwo />,
             className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
         },
         {
-            title: "Watch our AI on YouTube",
+            title: "DeQUIP - the new world.",
             description:
-                "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+                "DeQUIP – Decentralized Quantum-Uncrackable Infrastructure Protocol – is a revolutionary market category created by Quranium. Designed for today’s challenges and the quantum future, DeQUIP is the ultimate standard in uncrackable security.",
             skeleton: <SkeletonThree />,
             className:
                 "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
         },
         {
-            title: "Deploy in seconds",
+            title: "Led by a top-tier executive team with experience from Web2 & Web3 leaders worldwide.",
             description:
-                "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
+                "",
             skeleton: <SkeletonFour />,
             className: "col-span-1 lg:col-span-3 border-b lg:border-none",
         },
@@ -110,7 +110,7 @@ export const SkeletonOne = () => {
                 <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
                     {/* TODO */}
                     <img
-                        src="/linear.webp"
+                        src="/uncrack.svg"
                         alt="header"
                         width={800}
                         height={800}
@@ -128,7 +128,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
     return (
         <a
-            href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
+            href="/"
             target="__blank"
             className="relative flex gap-10  h-full group/image"
         >
@@ -137,11 +137,11 @@ export const SkeletonThree = () => {
                     {/* TODO */}
                     {/* <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " /> */}
                     <img
-                        src="https://assets.aceternity.com/fireship.jpg"
+                        src="/dequip.svg"
                         alt="header"
                         width={800}
                         height={800}
-                        className="h-full w-full aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+                        className="h-full w-full aspect-square object-cover object-center rounded-sm blur-none transition-all duration-200"
                     />
                 </div>
             </div>
@@ -151,11 +151,11 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
     const images = [
-        "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/qrn1.png",
+        "/qrn6.png",
+        "/qrn2.png",
+        "/qrn4.png",
+        "/qrn5.png",
     ];
 
     const imageVariants = {

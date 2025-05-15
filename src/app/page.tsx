@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { BackgroundBeams } from "../components/ui/background-beams";
+// import { BackgroundBeams } from "../components/ui/background-beams";
 import { GlowingEffect } from "../components/ui/glowing-effect";
 import { FeaturesSectionDemo } from "./FeatureSection"
 import { Timeline } from "../components/ui/timeline"
@@ -19,27 +19,27 @@ const cards = [
   {
     title: "Dynamic Data Streams",
     subtitle: "Process real-time blockchain feeds with ease.",
-    img: "/image.png",
+    img: "/qrn3.png",
   },
   {
-    title: "Secure Key Management",
+    title: "Kapil Dhiman on CNBC Arabia’s Crypto Weekly Show",
     subtitle: "Keep your private keys safe and decentralized.",
-    img: "/demo2.jpg",
+    img: "/qrn4.png",
   },
   {
     title: "On-chain Analytics",
     subtitle: "Visualize transactions as they happen.",
-    img: "/demo3.jpg",
+    img: "/qrn5.png",
   },
   {
     title: "Cross-Chain Bridge",
     subtitle: "Move assets seamlessly between networks.",
-    img: "/demo4.jpg",
+    img: "/qrn6.png",
   },
   {
     title: "Smart-Contract Templates",
     subtitle: "Deploy audited contracts in seconds.",
-    img: "/demo5.jpg",
+    img: "/qrn1.png",
   },
 ];
 
@@ -180,150 +180,296 @@ interface AnimatedWordsProps {
 //   // …add more steps here as needed
 // ];
 
+// const data = [
+//   {
+//     title: "2024",
+//     content: (
+//       <div>
+//         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+//           Built and launched Aceternity UI and Aceternity UI Pro from scratch
+//         </p>
+//         <div className="grid grid-cols-2 gap-4">
+//           <img
+//             src="https://assets.aceternity.com/templates/startup-1.webp"
+//             alt="startup template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/templates/startup-2.webp"
+//             alt="startup template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/templates/startup-3.webp"
+//             alt="startup template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/templates/startup-4.webp"
+//             alt="startup template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//         </div>
+//       </div>
+//     ),
+//   },
+//   {
+//     title: "Early 2023",
+//     content: (
+//       <div>
+//         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+//           I usually run out of copy, but when I see content this big, I try to
+//           integrate lorem ipsum.
+//         </p>
+//         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+//           Lorem ipsum is for people who are too lazy to write copy. But we are
+//           not. Here are some more example of beautiful designs I built.
+//         </p>
+//         <div className="grid grid-cols-2 gap-4">
+//           <img
+//             src="https://assets.aceternity.com/pro/hero-sections.png"
+//             alt="hero template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/features-section.png"
+//             alt="feature template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/pro/bento-grids.png"
+//             alt="bento template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/cards.png"
+//             alt="cards template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//         </div>
+//       </div>
+//     ),
+//   },
+//   {
+//     title: "Changelog",
+//     content: (
+//       <div>
+//         <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+//           Deployed 5 new components on Aceternity today
+//         </p>
+//         <div className="mb-8">
+//           <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+//             ✅ Card grid component
+//           </div>
+//           <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+//             ✅ Startup template Aceternity
+//           </div>
+//           <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+//             ✅ Random file upload lol
+//           </div>
+//           <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+//             ✅ Himesh Reshammiya Music CD
+//           </div>
+//           <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+//             ✅ Salman Bhai Fan Club registrations open
+//           </div>
+//         </div>
+//         <div className="grid grid-cols-2 gap-4">
+//           <img
+//             src="https://assets.aceternity.com/pro/hero-sections.png"
+//             alt="hero template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/features-section.png"
+//             alt="feature template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/pro/bento-grids.png"
+//             alt="bento template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//           <img
+//             src="https://assets.aceternity.com/cards.png"
+//             alt="cards template"
+//             width={500}
+//             height={500}
+//             className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+//           />
+//         </div>
+//       </div>
+//     ),
+//   },
+// ];
+
+
 const data = [
   {
-    title: "2024",
+    title: "Foundations Phase\n(January – February '24)",
     content: (
       <div>
-        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-          Built and launched Aceternity UI and Aceternity UI Pro from scratch
-        </p>
-        <div className="grid grid-cols-2 gap-4">
+        <ul className="list-disc list-inside space-y-2">
+          <li>Finalized White Paper</li>
+          <li>Core Team Assembled</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://assets.aceternity.com/templates/startup-1.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2hf3qqJJpxyJXlzymfKi9Y/5131867168fc9c607b435eb5d5dc0eb3/image1-31.png"
+            alt="Quantum infrastructure"
+            className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://assets.aceternity.com/templates/startup-2.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-          />
-          <img
-            src="https://assets.aceternity.com/templates/startup-3.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-          />
-          <img
-            src="https://assets.aceternity.com/templates/startup-4.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/53i0wuhcRS505f4z3SjkIb/2011353668abbddf60ccad7a5af2ebc8/post-quantum-signatures-kyqWWM.png"
+            alt="Post-quantum signatures"
+            className="h-16 w-full object-cover rounded"
           />
         </div>
       </div>
     ),
   },
   {
-    title: "Early 2023",
+    title: "Vision Unleashed\n(March – April '24)",
     content: (
       <div>
-        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-          I usually run out of copy, but when I see content this big, I try to
-          integrate lorem ipsum.
-        </p>
-        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-          Lorem ipsum is for people who are too lazy to write copy. But we are
-          not. Here are some more example of beautiful designs I built.
-        </p>
-        <div className="grid grid-cols-2 gap-4">
+        <ul className="list-disc list-inside space-y-2">
+          <li>Validated Product Vision</li>
+          <li>Reached out to early investors</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1ewsKSumB2t0mCKIp9i1yo/6d79a6e2ec066820b1c17bdb06fb96fe/image6-5.png"
+            alt="Quantum key exchange"
+            className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://assets.aceternity.com/features-section.png"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-          />
-          <img
-            src="https://assets.aceternity.com/pro/bento-grids.png"
-            alt="bento template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-          />
-          <img
-            src="https://assets.aceternity.com/cards.png"
-            alt="cards template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://i.ytimg.com/vi/f5tQLVtNbBo/maxresdefault.jpg"
+            alt="AI-driven security"
+            className="h-16 w-full object-cover rounded"
           />
         </div>
       </div>
     ),
   },
   {
-    title: "Changelog",
+    title: "Building Blocks\n(June – July '24)",
     content: (
       <div>
-        <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-          Deployed 5 new components on Aceternity today
-        </p>
-        <div className="mb-8">
-          <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-            ✅ Card grid component
-          </div>
-          <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-            ✅ Startup template Aceternity
-          </div>
-          <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-            ✅ Random file upload lol
-          </div>
-          <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-            ✅ Himesh Reshammiya Music CD
-          </div>
-          <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-            ✅ Salman Bhai Fan Club registrations open
-          </div>
+        <ul className="list-disc list-inside space-y-2">
+          <li>Launched Infrastructure Development</li>
+          <li>Secured Capital Raise</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-2 mt-4">
+          <img
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2hf3qqJJpxyJXlzymfKi9Y/5131867168fc9c607b435eb5d5dc0eb3/image1-31.png"
+            alt="Quantum infrastructure"
+            className="h-16 w-full object-cover rounded"
+          />
+          <img
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/53i0wuhcRS505f4z3SjkIb/2011353668abbddf60ccad7a5af2ebc8/post-quantum-signatures-kyqWWM.png"
+            alt="Post-quantum signatures"
+            className="h-16 w-full object-cover rounded"
+          />
         </div>
-        <div className="grid grid-cols-2 gap-4">
+      </div>
+    ),
+  },
+  {
+    title: "Anchoring Resilience\n(October '24)",
+    content: (
+      <div>
+        <ul className="list-disc list-inside space-y-2">
+          <li>Established legal entity in Switzerland</li>
+          <li>Expanded in Southeast Asia</li>
+          <li>Coined DeQUP, a new market category</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://assets.aceternity.com/pro/hero-sections.png"
-            alt="hero template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1ewsKSumB2t0mCKIp9i1yo/6d79a6e2ec066820b1c17bdb06fb96fe/image6-5.png"
+            alt="Quantum key exchange"
+            className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://assets.aceternity.com/features-section.png"
-            alt="feature template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://i.ytimg.com/vi/f5tQLVtNbBo/maxresdefault.jpg"
+            alt="AI-driven security"
+            className="h-16 w-full object-cover rounded"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Scaling Heights\n(Mid November '24)",
+    content: (
+      <div>
+        <ul className="list-disc list-inside space-y-2">
+          <li>Public Testnet Launch (Layer 1)</li>
+          <li>Kickoff of Quranium’s Node Sale</li>
+          <li>Launch of Q-Safe Wallet</li>
+          <li>Ongoing development of the “Q-Suite” of products</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-2 mt-4">
+          <img
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2hf3qqJJpxyJXlzymfKi9Y/5131867168fc9c607b435eb5d5dc0eb3/image1-31.png"
+            alt="Quantum infrastructure"
+            className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://assets.aceternity.com/pro/bento-grids.png"
-            alt="bento template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/53i0wuhcRS505f4z3SjkIb/2011353668abbddf60ccad7a5af2ebc8/post-quantum-signatures-kyqWWM.png"
+            alt="Post-quantum signatures"
+            className="h-16 w-full object-cover rounded"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Global Reach\n(January '25)",
+    content: (
+      <div>
+        <ul className="list-disc list-inside space-y-2">
+          <li>Expanding Geographically</li>
+          <li>Hosting “Be Uncrackable” events at Davos during WEF ’25</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-2 mt-4">
+          <img
+            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1ewsKSumB2t0mCKIp9i1yo/6d79a6e2ec066820b1c17bdb06fb96fe/image6-5.png"
+            alt="Quantum key exchange"
+            className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://assets.aceternity.com/cards.png"
-            alt="cards template"
-            width={500}
-            height={500}
-            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            src="https://i.ytimg.com/vi/f5tQLVtNbBo/maxresdefault.jpg"
+            alt="AI-driven security"
+            className="h-16 w-full object-cover rounded"
           />
         </div>
       </div>
     ),
   },
 ];
+
 
 function AnimatedWords({ children, delay = 100, className }: AnimatedWordsProps) {
   const words = children.split(' ');
@@ -468,7 +614,6 @@ export default function HomePage() {
           </div>
 
         </div>
-        <BackgroundBeams />
       </section>
 
       <FeaturesSectionDemo />
@@ -476,6 +621,7 @@ export default function HomePage() {
 
       {/* // put this inside your HomePage component, below the Projects section */}
       <section id="progress" className="py-20 ">
+        {/* <BackgroundBeams /> */}
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-light mb-8">
             Our <span className="font-bold">Progress</span> so far
@@ -637,14 +783,14 @@ export default function HomePage() {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              3D Parallax Magic
+              Quranium in Dubai During TOKEN2049
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Dive into immersive depth with CSS perspective effects on hover.
+              27 April - 4 May, 2025
             </CardItem>
             <CardItem
               translateZ="100"
@@ -653,7 +799,7 @@ export default function HomePage() {
               className="w-full mt-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                src="/qrn1.png"
                 height="600"
                 width="800"
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -688,14 +834,14 @@ export default function HomePage() {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Floating UI Elements
+              Join The Uncrackable Conversation, Episode #1 - Live on LinkedIn
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Make your interfaces come alive with subtle floating animations.
+              25 April, 2025
             </CardItem>
             <CardItem
               translateZ="100"
@@ -704,7 +850,7 @@ export default function HomePage() {
               className="w-full mt-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80"
+                src="/qrn2.png"
                 height="600"
                 width="800"
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
