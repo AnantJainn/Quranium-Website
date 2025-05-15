@@ -106,15 +106,14 @@ export const Header = () => {
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
         Welcome to Quranium,
-Home to the Uncrackable
-Digital Future
+        Home to the Uncrackable
+        Digital Future
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         Founded in early 2024 by Web3 visionaries from top tech and consulting firms, Quranium is here with a mission that matters: to be the unbreakable foundation in a fast-evolving digital world. Our 120+ experts from across the globe—from Switzerland to Singapore, California to Dubai—share one vision: making the digital world accessible, secure, and a trusted space where innovation thrives.
         <br />
 
-Quranium isn't just a platform; it's a movement. And it's built for you.
-      </p>
+        Quranium isn&apos;t just a platform; it&apos;s a movement. And it&apos;s built for you.      </p>
     </div>
   );
 };
