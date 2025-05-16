@@ -46,7 +46,7 @@ export function FeaturesSectionDemo() {
                     Packed with thousands of features
                 </h4>
 
-                <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+                <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-300 text-center font-normal dark:text-neutral-300">
                     From Image generation to video generation, Everything AI has APIs for
                     literally everything. It can even create this website copy for you.
                 </p>
@@ -94,7 +94,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
         <p
             className={cn(
                 "text-sm md:text-base  max-w-4xl text-left mx-auto",
-                "text-neutral-500 text-center font-normal dark:text-neutral-300",
+                "text-neutral-300 text-center font-normal dark:text-neutral-300",
                 "text-left max-w-sm mx-0 md:text-sm my-2"
             )}
         >
