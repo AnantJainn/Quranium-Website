@@ -684,12 +684,12 @@ const data = [
         </ul>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2hf3qqJJpxyJXlzymfKi9Y/5131867168fc9c607b435eb5d5dc0eb3/image1-31.png"
+            src="/time5.jpg"
             alt="Quantum infrastructure"
             className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/53i0wuhcRS505f4z3SjkIb/2011353668abbddf60ccad7a5af2ebc8/post-quantum-signatures-kyqWWM.png"
+            src="/time6.jpg"
             alt="Post-quantum signatures"
             className="h-16 w-full object-cover rounded"
           />
@@ -707,12 +707,12 @@ const data = [
         </ul>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1ewsKSumB2t0mCKIp9i1yo/6d79a6e2ec066820b1c17bdb06fb96fe/image6-5.png"
+            src="/time3.jpg"
             alt="Quantum key exchange"
             className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://i.ytimg.com/vi/f5tQLVtNbBo/maxresdefault.jpg"
+            src="/time4.jpg"
             alt="AI-driven security"
             className="h-16 w-full object-cover rounded"
           />
@@ -730,12 +730,12 @@ const data = [
         </ul>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2hf3qqJJpxyJXlzymfKi9Y/5131867168fc9c607b435eb5d5dc0eb3/image1-31.png"
+            src="/time5.jpg"
             alt="Quantum infrastructure"
             className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/53i0wuhcRS505f4z3SjkIb/2011353668abbddf60ccad7a5af2ebc8/post-quantum-signatures-kyqWWM.png"
+            src="/time6.webp"
             alt="Post-quantum signatures"
             className="h-16 w-full object-cover rounded"
           />
@@ -754,12 +754,12 @@ const data = [
         </ul>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1ewsKSumB2t0mCKIp9i1yo/6d79a6e2ec066820b1c17bdb06fb96fe/image6-5.png"
+            src="/time3.jpg"
             alt="Quantum key exchange"
             className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://i.ytimg.com/vi/f5tQLVtNbBo/maxresdefault.jpg"
+            src="/time4.jpg"
             alt="AI-driven security"
             className="h-16 w-full object-cover rounded"
           />
@@ -779,12 +779,12 @@ const data = [
         </ul>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2hf3qqJJpxyJXlzymfKi9Y/5131867168fc9c607b435eb5d5dc0eb3/image1-31.png"
+            src="/time5.jpg"
             alt="Quantum infrastructure"
             className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/53i0wuhcRS505f4z3SjkIb/2011353668abbddf60ccad7a5af2ebc8/post-quantum-signatures-kyqWWM.png"
+            src="/time6.webp"
             alt="Post-quantum signatures"
             className="h-16 w-full object-cover rounded"
           />
@@ -802,12 +802,12 @@ const data = [
         </ul>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <img
-            src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/1ewsKSumB2t0mCKIp9i1yo/6d79a6e2ec066820b1c17bdb06fb96fe/image6-5.png"
+            src="/time3.jpg"
             alt="Quantum key exchange"
             className="h-16 w-full object-cover rounded"
           />
           <img
-            src="https://i.ytimg.com/vi/f5tQLVtNbBo/maxresdefault.jpg"
+            src="/time5.jpg"
             alt="AI-driven security"
             className="h-16 w-full object-cover rounded"
           />
